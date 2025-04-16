@@ -8,20 +8,20 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --background: 220 13% 96%; /* Light gray */
+    --foreground: 240 10% 10%; /* Darker foreground */
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    --primary: 197 71% 68%; /* Sky blue */
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 180 100% 25%; /* Teal */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
@@ -49,13 +49,13 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --primary: 203 71% 65%;
     --primary-foreground: 0 0% 9%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 180 100% 25%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -85,4 +85,17 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.google-maps-background {
+  background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=0,0&zoom=1&size=600x600&maptype=roadmap&style=feature:water|element:geometry|color:0xbbd1e4&style=feature:road.highway|element:geometry.fill|color:0xfafafc&style=feature:road.local|element:geometry.fill|color:0xffffff&style=feature:poi|element:labels|visibility:off&style=feature:transit|visibility:off&style=feature:landscape.man_made|element:geometry|color:0xf0f0f0&style=feature:administrative|visibility:off');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Adjust for desired transparency */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind all other content */
 }
