@@ -40,3 +40,7 @@ next-env.d.ts
 .genkit/*
 
 .env
+
+.specstory/
+
+.cursor/
