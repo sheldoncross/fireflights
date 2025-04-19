@@ -20,12 +20,13 @@ you might integrate them effectively.
   supported by the following browsers: Chrome, Safari, Firefox.
 - When creating user documentation (README files, user guides), adhere to the
   Google developer documentation style guide
-  (https://developers.google.com/style).
+  (https://developers.google.com/style) and (https://google.github.io/styleguide/jsguide.html).
+
 
 # Overall guidelines
 
 - Assume that the user is a junior developer.
-- Always think through problems step-by-step.
+- Always think through problems step-by-step
 
 # Project context
 
